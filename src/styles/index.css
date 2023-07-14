@@ -1,12 +1,96 @@
+body {
+    background-color: rgb(250, 250, 250);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* 
+  .title{
+    font-size: 80px;
+    color: lightcoral;
+    font-weight: lighter;
+}
+  
+  input {
+    outline: none;
+    border: 1px solid lightgrey;
+    width: 500px;
+    height: 50px;
+    font-size: 28px;
+    color: lightslategray;
+    padding-left: 30px;
+  }
+  
+  .toDo{
+    background-color: #fff;
+    border-width: 0;
+    width: 500px;
+    height: 50px;
+    font-size: 28px;
+    color: lightslategray;
+    padding-left: 30px;
+    border: 1px solid lightgrey;
+    border-top-width: 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.task{color: lightslategray;}
+.task:hover{color: lightcoral;}
 
-*/
+a:link { text-decoration: none; }
+
+.delete{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: lightcoral;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+.delete:hover{
+    cursor: pointer;
+}
+
+.paper {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px;
+    padding-left: 30px;
+    border: 1px solid lightgrey;
+    border-top-width: 0;
+    border-bottom: 0;
+    background: #fff;
+    font-size: 12px;
+    color: lightgrey;
+    box-shadow:
+      /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+      /* The second layer */
+      0 10px 0 -5px #eee,
+      /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+       /* The third layer */
+      0 20px 0 -10px #eee,
+      /* The third layer shadow */
+      0 20px 1px -9px rgba(0,0,0,0.15);
+      /* Padding for demo purposes */
+      
+  }
+
+  .todoPage{
+    padding: 30px;
+    text-align: center;
+    padding: 10px;
+    font-size: 80px;
+    color: lightcoral;
+    font-weight: lighter;
+  }
+
+  .back{
+    padding: 30px;
+    text-align: center;
+  }
